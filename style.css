@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+html , body
+{
+    height: 100%;
+    width: 100%;
+    
+    
+}
+body{
+    background-color: #f7f7f7;
+}
+#nav{
+     
+    padding: 25px;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 90;
+
+}
+#nav #navpart2{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#links{
+    padding: 10px;
+}
+#navpart2 #links a{
+
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+
+}
+#icon{
+   
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #f7f7f7;
+
+
+}
+#navpart1{
+
+    /* background-color: green; */
+    height: 83px;
+    overflow: hidden;
+
+}
+#navpart1 svg{
+
+    display: block;
+}
+#navpart2 #icon i{
+
+font-size: 18px;
+margin: 0 20px;
+font-weight: 100;
+
+
+}
+#cursor{
+    height: 13%;
+    width: 7.5%;
+    background-color: rgba(224, 139, 189, 0.814);
+    border-radius: 50%;
+    position:fixed;
+    transform: translate(-50%,-50%)scale(0);
+    z-index: 1;
+
+
+}
+
+
+#page1{
+min-height: 100vh;
+position: relative;
+width: 100%;
+padding: 0 1vw;
+padding-top: 15vh;
+}
+
+@font-face {
+    font-family: Futura-Bold;
+    src: url(Futura-Bold.ttf);
+  }
+  
+ 
+
+
+#page1 h1{
+    font-family: Futura-Bold; 
+    font-size: 14.4vw;
+    text-transform: uppercase;
+    line-height: 14vw;
+    letter-spacing: -5px;
+}
+
+#videocontainer{
+  
+    background-color:grey;
+
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vh;
+    position: relative;
+    
+
+}
+#videocontainer video{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#videocontainer #play{
+   
+    padding: 3vw 2vw;
+
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+    
+
+}
+#page2{
+
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 3vw 2vw;
+    justify-content: space-between;
+    gap: 2px;
+
+}
+
+#page2 .elem{
+
+height: 100%;
+width: 32.5%;
+/* background-color: green; */
+overflow: hidden;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+#page2 .elem .dets{
+
+    height: 60px;
+    border-radius: 50px;
+    width: 80%;
+    position: absolute;
+    z-index: 9;
+    background-color: #000;
+}
+#page2 .elem .dets:hover{
+
+    height: 200px;
+}
+
+
+#page3{
+
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.child{
+height: 55vh;
+width: 70vh;
+/* background-color: green; */
+position: relative;
+display: flex;
+align-items: center;
+}
+.child img{
+    height: 100%;
+   
+}
+
+
+#footer footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width:600px) {
+
+    #nav{
+     
+        padding: 15px;
+        width: 100%;
+        /* background-color: burlywood; */
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 90;
+    
+    }
+    #nav #navpart2{
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    #links{
+        padding: 10px;
+        display: none;
+    }
+    #navpart2 #links a{
+    
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0 20px;
+    
+    }
+    #icon{
+       
+        padding: 7px;
+        border-radius: 50px;
+        background-color: #f7f7f7;
+    
+    
+    }
+    #navpart1{
+    
+        /* background-color: green; */
+        height: 67px;
+        overflow: hidden;
+    
+    }
+    #navpart1 svg{
+    
+        display: block;
+        height: 67px;
+        width: 80px;
+    }
+    #nav #twogoodlogo{
+ 
+        height: 40px;
+        margin-left: -25px;
+
+    }
+    #navpart2 #icon i{
+
+    font-size: 15px;
+    margin: 0 20px;
+    font-weight: 100;
+    
+    
+    }
+
+
+
+
+    #page1{
+       min-height: 70vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 25vh;
+        }
+
+    #page1 h1{ 
+        font-size: 15.5vw;
+        letter-spacing: -3px;
+
+    }
+    #videocontainer{
+  
+        background-color:grey;
+    
+        height: 25vh;
+        margin-top: 3vh;
+        
+    
+    }
+    #videocontainer #play{
+   
+        padding: 9.5vw 7.2vw;
+    
+       
+        font-size: 4.5vw;
+        position: absolute;
+        top: 33%;
+        left: 35%;
+        opacity: 1;
+        scale: 1;
+      transform: translate(-50% -50%);
+        
+    
+    }
+    #page2{
+
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 5vw 3vw;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2px;
+    
+    }
+    
+    #page2 .elem{
+    
+    height: 100vh;
+    width: 100%;
+    /* background-color: green; */
+    overflow: hidden;
+    margin-bottom: 3vw;
+    }
+    #page2 .elem img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        scale: 1.1;
+    }
+    #page2 .elem .dets{
+
+        height: 40px;
+        border-radius: 50px;
+        width: 80%;
+        position: absolute;
+        z-index: 9;
+        background-color: #000;
+    }
+
+    #page3{
+
+        min-height: 120vh;
+        width: 100%;
+        position: relative;
+        background-color: #f7f7f7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    
+    
+    .child{
+    height: 55vh;
+    width: 38vh;
+    /* background-color: green; */
+    position: relative;
+    padding: 15vw;
+   /* padding-right: 90vh; */
+    display: flex;
+    align-items: center;
+    }
+    .child img{
+        height: 100%;
+       
+    }
+    
+    #footer .footerNav ul{
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+   
+}
